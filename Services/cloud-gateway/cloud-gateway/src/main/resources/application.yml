@@ -1,0 +1,33 @@
+spring:
+  application:
+     name: CLOUD-GATEWAY
+  config:
+    import:
+      - optional:configserver:http://localhost:9196
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: FOOD-ORDER-SERVICE
+            uri: lb://FOOD-ORDER-SERVICE
+            predicates:
+              - path=/orders/**
+#            filters:
+#              - name: CircuitBreaker
+#                args:
+#                  name: food-order-service
+#                  fallbackuri: forward:/orderFallBack
+          - id: FOOD-PAYMENT-SERVICE
+            uri: lb://FOOD-PAYMENT-SERVICE
+            predicates:
+              - path=/payment/**
+#            filters:
+#              - name: CircuitBreaker
+#                args:
+#                  name: food-order-service
+#                  fallbackuri: forward:/paymentFallBack
+server:
+  port: 8989
+
+
+

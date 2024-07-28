@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Services/Food-Order-Service/Food-Order-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/Food-payment-Service/Food-payment-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/cloud-config-server/cloud-config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/cloud-gateway/cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/service-discovery/service-discovery/src/main/java" charset="UTF-8" />
+  </component>
+</project>
